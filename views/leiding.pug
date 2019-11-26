@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  
+  h1 Leiding
+  div(class = 'leidingDiv')
+    for leiding in leiding_list
+      div(class = 'leidingDivDiv')
+	    p #{leiding.name} #{leiding.leeftijd} #{leiding.tak} 
+        img(src=leiding.afbeelding)
+    else
+      p Er zijn geen leiders.
