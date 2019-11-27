@@ -13,7 +13,6 @@ var app = express();
 var mongoose = require('mongoose');
 // Set up mongoose connection
 var dev_db_url = 'mongodb+srv://Jonas:LocalLibrary@cluster0-mzd3j.azure.mongodb.net/ScoutsEnGidsenLede?retryWrites=true&w=majority'
-
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
