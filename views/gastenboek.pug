@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 extends layout
 
 block content
@@ -37,4 +38,45 @@ block content
           | )
       p #{bericht.bericht}
   else
+=======
+extends layout
+
+block content
+  h1 Gastenboek
+  
+  form(method='POST' action='')
+    div.form-group
+      label(for='naam') Naam:
+      input#naam.form-control(type='text' placeholder='Naam' name='naam' required='true' value=(undefined===gastenboek ? '' : gastenboek.naam) )
+    div.form-group
+      label(for='bericht') Bericht:
+      textarea#bericht.form-control(type='textarea', placeholder='Bericht' name='bericht' rows='3' required='true') #{undefined===gastenboek ? '' : gastenboek.bericht}
+    div.form-group
+      label(for='email') Email:
+      input#email.form-control(type='email' placeholder='Email' name='email' value=(undefined===gastenboek ? '' : gastenboek.email) )
+    div.form-group
+      label(for='website') Website:
+      input#website.form-control(type='url' placeholder='http:// ' name='website' value=(undefined===gastenboek ? '' : gastenboek.website) )
+    button.btn.btn-primary(type='submit') Toevoegen
+  
+  if errors 
+    ul
+      for error in errors
+        li!= error.msg
+  
+  h1 Berichten
+  for bericht in gastenboek_berichten
+    div(class='bericht')
+      p Van: 
+        if bericht.email 
+          a(href='mailto:'+bericht.email) #{bericht.naam}
+        else
+          | #{bericht.naam}
+        if bericht.website
+          |  (
+          a(href=bericht.website) #{bericht.website}
+          | )
+      p #{bericht.bericht}
+  else
+>>>>>>> bb8cbcef444865837e57b17b76298b5ed1f020e7
     p Er zijn geen berichten beschikbaar.

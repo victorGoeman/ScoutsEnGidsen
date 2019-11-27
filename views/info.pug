@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 extends layout
 
 block content
@@ -39,4 +40,47 @@ block content
           br
           a(href='http://www.hopper.be') www.hopper.be
       th
+=======
+extends layout
+
+block content
+  h3 Leeftijdstakken
+  ul
+    each groep in groep_list
+      li 
+        a(href=groep.url) #{groep.name} (#{groep.LTrange})
+    else
+      p Oops, er is iets misgelopen.
+	  
+  h3 Vergaderingen
+  p Elke zondag is er 'vergadering'. Dit is echter niet wat de gemiddelde scoutsleek zich voorstelt: een saaie bespreking rond een tafel met mensen die van verveling in slaap sukkelen. Het is eigenlijk zo'n beetje het tegendeel: allerlei spannende, boeiende en fantasieprikkelende activiteiten worden georganiseerd, natuurlijk aangepast aan de leeftijd van de tak.
+
+  h3 Inschrijven
+  p Inschrijven bij onze scoutsgroep kan op meerdere manieren. Ofwel kom je eens langs naar onze jaarlijkse overgang in september. Ofwel spring je op een zondagnamiddag eens binnen in onze lokalen. (Liefst bij de opening om 14u.) Tenslotte kan je ons ook mailen voor een afspraak.
+  p Het inschrijvingsgeld voor dit scoutsjaar bedraagt 35 euro. Dit dient gestort te worden op onze rekening BE34 7371 1104 0690.
+  p Verder dient bij de inschrijving een medische fiche ingevuld te worden zodat wij de juiste gegevens hebben en deze nauwkeurig kunnen ingeven op onze groepsadministratie. Nog geen MF ingevuld/gekregen? Vraag dan snel een blanco exemplaar en breng het de eerstvolgende vergadering ingevuld mee.
+
+  h3 Scouts & Gidsen Vlaanderen ?
+  p Scouts en Gidsen Vlaanderen richt zich met scouting op de ontplooiing van jonge mensen als individu, in groep en binnen de samenleving. Ploegwerk, medebeheer, zelfwerkzaamheid, engagement en dienst zijn de basis van onze aanpak. Met activiteiten vol avontuur en creativiteit bouwt Scouts en Gidsen Vlaanderen een werking op per leeftijdstak. Het openluchtleven is onze kracht. Scouting wil zeggen: op verkenning gaan. Het is een spel dat niet luchtledig is, vrije tijd die niet vrijblijvend is. Zo wil Scouts en Gidsen Vlaanderen alle kinderen en jongeren helpen opgroeien tot gelukkige mensen in een rechtvaardige wereld.
+  
+  h3 Hopper Winkel
+  p De scoutsshop is de winkel van de scouts. Iedereen kan hier terecht voor kampmateriaal, publicaties over scouting, bewegingskledij, enzovoort. Scoutsshop wordt gerund door en voor scouting. Alle opbrengsten gaan naar onze jeugdbeweging. Je bespaart de vrijwilligers van de scoutsshop wat tijd als je ons groepsnummer bij hebt (023/08G).
+  table(style='width:100%')
+    tr
+      th
+        img(src='/images/hopper-logo.png')
+      th
+        p #[strong Hopper winkel Aalst]
+          br
+          | Kapellekensbaan 14, 
+          br
+          | 9320 Aalst 
+          br
+          | Telefoon (053) 71.19.79 
+          br
+          a(href='mailto:winkel.aalst@hopper.be') winkel.aalst@hopper.be 
+          br
+          a(href='http://www.hopper.be') www.hopper.be
+      th
+>>>>>>> bb8cbcef444865837e57b17b76298b5ed1f020e7
         iframe(width='100%', src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.8542241784803!2d4.049921515748689!3d50.92641357954379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3bd6c004444cb%3A0x493ba42efd4a8fba!2sKapellekensbaan%2014%2C%209320%20Aalst!5e0!3m2!1snl!2sbe!4v1572536301534!5m2!1snl!2sbe")

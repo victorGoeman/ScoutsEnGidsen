@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 Run website:
 SET DEBUG=express-locallibrary-tutorial:* & npm run devstart
 
 Connect MongoDB:
+=======
+Run website:
+SET DEBUG=express-locallibrary-tutorial:* & npm run devstart
+
+Connect MongoDB:
+>>>>>>> bb8cbcef444865837e57b17b76298b5ed1f020e7
 mongodb+srv://Jonas:LocalLibrary@cluster0-mzd3j.azure.mongodb.net/ScoutsEnGidsenLede?retryWrites=true&w=majority

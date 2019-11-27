@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 extends layout
 
 block content
@@ -10,3 +11,17 @@ block content
         img(src=leiding.afbeelding)
     else
       p Er zijn geen leiders.
+=======
+extends layout
+
+block content
+  
+  h1 Leiding
+  div(class = 'leidingDiv')
+    for leiding in leiding_list
+      div(class = 'leidingDivDiv')
+	    p #{leiding.name} #{leiding.leeftijd} #{leiding.tak} 
+        img(src=leiding.afbeelding)
+    else
+      p Er zijn geen leiders.
+>>>>>>> bb8cbcef444865837e57b17b76298b5ed1f020e7
