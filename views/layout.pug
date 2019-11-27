@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    title Scouts en Gidsen Lede: #{title}
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    div(class='mid')
+      nav
+        img(src='/images/header.jpg') 
+        ul
+          li
+            a(href='/') Start
+          li
+            a(href='/info') Info
+            ul
+              li
+                a(href='/info') Info
+              each groep in groep_list
+                li 
+                  a(href=groep.url) #{groep.name} 
+                    br
+                    | #{groep.LTrange}
+              else
+                iets is fout gelopen.			  
+          li
+            a(href='/media') Multimedia
+          li
+            a(href='/facebook') Facebook
+          li
+            a(href='/verhuur') Verhuur
+          li
+            a(href='/gastenboek') Gastenboek
+          li
+            a(href='/leiding') Leiding
+      div(class='content')
+        block content
