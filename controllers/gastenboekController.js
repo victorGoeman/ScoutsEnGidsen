@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var Groep = require('../models/groep');
 var Gastenboek = require('../models/gastenboek');
 var async = require('async');
