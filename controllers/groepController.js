@@ -104,7 +104,6 @@ exports.groep_detail = function(req, res) {
 
 };
 
-=======
 var Groep = require('../models/groep');
 var async = require('async');
 const { body,validationResult } = require('express-validator');
